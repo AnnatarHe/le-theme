@@ -5,6 +5,8 @@
   "main": "dist/index.js",
   "author": "",
   "scripts": {
+    "dev": "webpack --config ./build/webpack.base.config.js",
+    "ts": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +23,18 @@
   "bugs": {
     "url": "https://github.com/AnnatarHe/le-theme/issues"
   },
-  "homepage": "https://github.com/AnnatarHe/le-theme#readme"
+  "homepage": "https://github.com/AnnatarHe/le-theme#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.0.0-beta.17",
+    "source-map-loader": "^0.1.5",
+    "typescript": "^2.1.4",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "@types/react": "0.0.0",
+    "@types/react-dom": "^0.14.20",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
 }
