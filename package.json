@@ -5,8 +5,10 @@
   "main": "dist/index.js",
   "author": "",
   "scripts": {
-    "dev": "webpack --config ./build/webpack.base.config.js",
+    "dev": "node ./build/devServer.js",
     "ts": "tsc",
+    "c": "stylus --help",
+    "css": "stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" --import ./node_modules/normalize-styl/index.styl src/index.styl -o dist -c -m",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,7 +36,17 @@
   "dependencies": {
     "@types/react": "0.0.0",
     "@types/react-dom": "^0.14.20",
+    "autoprefixer": "^6.6.1",
+    "css-loader": "^0.26.1",
+    "html-webpack-plugin": "^2.26.0",
+    "normalize-styl": "^4.1.1",
+    "normalize.styl": "^3.0.3",
+    "poststylus": "^0.2.3",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "3.0.0-beta.6",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.4.0"
   }
 }
