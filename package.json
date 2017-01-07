@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A react UI theme called `le-theme`",
   "main": "dist/index.js",
-  "author": "AnnatarHe, iamhele1994@gmail.com",
+  "author": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,8 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/AnnatarHe/le-theme.git"
   },
-  "keywords": ["react", "le", "theme", "design"],
-  "author": "",
+  "keywords": [
+    "react",
+    "le",
+    "theme",
+    "design"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AnnatarHe/le-theme/issues"
