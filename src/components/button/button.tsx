@@ -1,10 +1,9 @@
 import * as React from 'react'
-
-type buttonType = 'default' | 'success' | 'error' | 'info'
+import { buttonType } from '../../types/button'
 
 interface ButtonProps {
     type: buttonType,
-    text: string
+    children: any
 }
 
 class Button extends React.PureComponent<ButtonProps, any> {
@@ -18,7 +17,7 @@ class Button extends React.PureComponent<ButtonProps, any> {
             <button 
                 className={`--le-button --le-button-${this.props.type}`}
             >
-                { this.props.text }
+                {this.props.children}
             </button>
         )
     }

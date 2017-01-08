@@ -1,8 +1,9 @@
 import * as React from 'react'
 import Button from '../button/button'
+import { buttonType } from '../../types/button'
 
 export interface AlertProps {
-    type: string,
+    type: buttonType,
     msg: string,
     cb?: Function
 }
