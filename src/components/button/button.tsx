@@ -3,7 +3,7 @@ import { buttonType } from '../../types/button'
 
 interface ButtonProps {
     type: buttonType,
-    children: any
+    children?: React.ReactNode
 }
 
 class Button extends React.PureComponent<ButtonProps, any> {

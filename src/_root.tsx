@@ -1,9 +1,7 @@
 import * as React from 'react'
-import Alert from './components/alert/alert'
-import Switch from './components/switch/index'
+import { Loading, Switch } from './index'
 
 interface RootProps {
-
 }
 
 interface RootState {
@@ -26,6 +24,7 @@ class Root extends React.PureComponent<RootProps, RootState> {
                     onChange={e => this.setState({ switchStatus: !this.state.switchStatus })}
                     pos={this.state.switchStatus}
                     />
+                <Loading />
             </div>
         )
     }

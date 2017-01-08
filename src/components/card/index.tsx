@@ -5,5 +5,11 @@
  */
 
 import Cards from './cards'
+import Card from './card'
+
+
+// TODO: assign Card to Cards
+
+export { Card }
 
 export default Cards

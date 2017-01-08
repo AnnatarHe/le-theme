@@ -7,19 +7,15 @@
 import * as React from 'react'
 
 interface CardsProps {
+    children: React.ReactNode[]
 }
 
-class Cards extends React.PureComponent<CardsProps, any> {
-    constructor(props: CardsProps) {
-        super(props)
-    }
-
-    render() {
-        return (
-            <div>
-            </div>
-        )
-    }
+const Cards = (props: CardsProps) => {
+    return (
+        <div className="--le-cards-container --le-flex-design">
+            { props.children }
+        </div>
+    )
 }
 
 export default Cards
