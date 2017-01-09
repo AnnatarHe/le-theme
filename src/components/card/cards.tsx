@@ -10,12 +10,16 @@ interface CardsProps {
     children: React.ReactNode[]
 }
 
-const Cards = (props: CardsProps) => {
-    return (
-        <div className="--le-cards-container --le-flex-design">
-            { props.children }
-        </div>
-    )
+class Cards extends React.PureComponent<CardsProps, any> {
+    static Card: React.ReactNode
+
+    render() {
+        return (
+            <div className="--le-cards-container --le-flex-design">
+                { this.props.children }
+            </div>
+        )
+    }
 }
 
 export default Cards

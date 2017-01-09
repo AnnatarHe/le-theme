@@ -7,8 +7,7 @@
 import Cards from './cards'
 import Card from './card'
 
-
-// TODO: assign Card to Cards
+Cards.Card = Card
 
 export { Card }
 
