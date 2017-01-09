@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Loading, Switch } from './index'
+import { Loading, Switch, Alert } from './index'
 
 interface RootProps {
 }
@@ -25,6 +25,7 @@ class Root extends React.PureComponent<RootProps, RootState> {
                     pos={this.state.switchStatus}
                     />
                 <Loading />
+                <Alert msg="hello" type="success" cb={() => console.log('oh')} />
             </div>
         )
     }

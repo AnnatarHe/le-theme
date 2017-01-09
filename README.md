@@ -23,6 +23,7 @@ import font awesome like this:
 ## Components
 
 Cards -- Cards
+
        |-- Card
 
 Loading
