@@ -1,3 +1,9 @@
+/**
+ * @author AnnatarHe
+ * @email iamhele1994@gmail.com
+ * @date 2017.01.10
+ */
+
 import * as React from 'react'
 import { Loading, Switch, Alert } from './index'
 
