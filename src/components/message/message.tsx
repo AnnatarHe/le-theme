@@ -6,7 +6,7 @@
 
 import * as React from 'react'
 import ReactElement = React.ReactElement;
-import ReactCssTransitionGroup from 'react-css-transition-group'
+import * as ReactCssTransitionGroup from 'react-addons-css-transition-group'
 
 interface MessageProps {
     show: boolean,
@@ -26,13 +26,17 @@ class Message extends React.PureComponent<MessageProps, any> {
             ) : this.props.Content
         const Result = this.props.show ? (
             <div>
-                <Content />
+                { Content }
             </div>
         ) : null
 
         return (
-            <ReactCssTransitionGroup>
-                <Result />
+            <ReactCssTransitionGroup
+                transitionName="fade"
+                transitionEnterTimeout={350}
+                transitionLeaveTimeout={250}
+            >
+                { Result }
             </ReactCssTransitionGroup>
         )
     }
